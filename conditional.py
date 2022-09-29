@@ -28,12 +28,11 @@ if fee >= 3000:
     print("택시")
 else:
     print("걷기")
-# 2️⃣and (둘 다 True일 경우에 전체가 True, 기호: & ) /  or(둘 중 하나라도 True이면 전체가 True, 기호: | )  
+# 2️⃣and (둘 다 True일 경우에 전체가 True, 기호: & ) /  or(둘 중 하나라도 True이면 전체가 True) / |는 비트연산자에 사용하므로 or와 다름
 # not(True, False를 바꾼다, not True == Fasle / not False == True)
 taxiFee = 2000
 card = 1
 if taxiFee >= 3000 or card: 
-    # or 기호( | ) 사용 시 앞의 조건을 괄호()로 감싸주지 않는 경우 뒤의 숫자를 int로 인식하는 듯 하다. ex)if (taxiFee >= 3000) | card:
     # 괄호를 사용하지 않을 경우, or 사용 시에는 정상 결과가 출력되나 기호를 사용하면 else의 결과를 출력함
     # and의 경우도 동일
     print("택시가능")
